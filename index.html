@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Music Player</title>
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="top-side">
+                <div class="cover-img">
+                    <img src="./assets/images/album-placeholder.jpg" alt="album cover">
+                </div>
+                <div class="info-container">
+                    <div class="album-info">
+                        <h5>Album</h5>
+                        <h4 id="album">Late-Night Debug Sessions</h4>
+                        <p>by <span class="artist">hsynmrzyv</span></p>
+                    </div>
+                    <ul id="playlist-stats">
+                        <li>
+                            <span id="year">0000</span>
+                        </li>
+                        <li>
+                            <span id="song-count">0 songs</span>
+                        </li>
+                        <li>
+                            <span id="total-duration">00m 00s</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="bottom-side">
+                <div class="info-container">
+                    <div class="left-side">
+                        <span>#</span>
+                        <span>Title</span>
+                    </div>
+                    <span>Duration</span>
+                </div>
+                <ul id="playlist">
+                    <li>
+                        <div class="left-side">
+                            <span id="number">1</span>
+                            <span id="title">Title</span>
+                        </div>
+                        <span id="duration">0:00</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="right-side">
+            <h3>Now Playing</h3>
+
+            <div id="cover">
+                <img src="./assets/images/album-placeholder.jpg" alt="cover">
+            </div>
+
+            <p id="title">Summertime Saddness</p>
+
+            <p id="artist">Lana Del Rey</p>
+
+            <div class="duration-bar">
+                <div id="song-duration-bar"></div>
+            </div>
+
+            <div class="duration-container">
+                <span id="current-time">0:00</span>
+                <span id="total-duration">1:36</span>
+            </div>
+
+            <div class="btn-container">
+                <div id="previous">
+                    <img src="./assets/icons/previous.svg" alt="previous icon">
+                </div>
+                <div id="play-pause">
+                    <img src="./assets/icons/play.svg" alt="play-pause icon">
+                </div>
+                <div id="next">
+                    <img src="./assets/icons/next.svg" alt="next icon">
+                </div>
+            </div>
+            
+            <div class="volume-control">
+                <div class="volume-bar">
+                    <div id="volume"></div>
+                </div>
+                <div class="volume-icon">
+                    <img src="./assets/icons/volume.svg" alt="volume icon">
+                </div>
+            </div>
+        </div>
+    </div>
+        <script src="./script.js"></script>
+</body>
+</html>

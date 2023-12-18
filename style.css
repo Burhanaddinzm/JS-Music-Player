@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background-color: #b7b7b7;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+  margin-top: 60px;
+  border-radius: 10px;
+  display: flex;
+  overflow: hidden;
+}
+
+.container > .left-side {
+  padding: 32px;
+  min-width: 600px;
+}
+
+.container > .left-side .top-side {
+  display: flex;
+  gap: 1rem;
+}
+
+.container > .left-side .top-side .cover-img {
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+}
+
+.container > .left-side .top-side .cover-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-container .album-info h5 {
+  color: #b7b7b7;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.info-container .album-info #album {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.info-container .album-info p {
+  margin-top: 8px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.info-container .album-info p .artist {
+  text-decoration-line: underline;
+  font-weight: 600;
+}
+
+#playlist-stats {
+  margin-top: 1rem;
+  display: flex;
+  gap: 20px;
+  color: #b7b7b7;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.container > .left-side .bottom-side {
+  margin-top: 2rem;
+  max-height: 370px;
+  overflow-y: scroll;
+}
+
+.container > .left-side .bottom-side .info-container {
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.container > .left-side .bottom-side .info-container span {
+  color: #b7b7b7;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container > .left-side .bottom-side .info-container .left-side {
+  display: flex;
+  gap: 24px;
+}
+
+#playlist li {
+  display: flex;
+  padding: 8px;
+  justify-content: space-between;
+  border-bottom: 1px solid #b7b7b7;
+  color: #b7b7b7;
+}
+
+#playlist li .left-side {
+  display: flex;
+  gap: 2rem;
+}
+
+#playlist li #title {
+  color: #000;
+}
+
+#playlist li span {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+*::-webkit-scrollbar {
+  width: 16px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #11202b;
+  border-radius: 10px;
+  border: 3px solid #ffffff;
+}
+
+.container .right-side {
+  background-color: #11202b;
+  padding: 24px 100px;
+  flex-grow: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.container .right-side h3 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.container .right-side #cover {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 20px;
+}
+
+.container .right-side #cover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container .right-side #title {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.container .right-side #artist {
+  color: #b7b7b7;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.container .right-side .duration-bar {
+  border-radius: 3px;
+  background: #b7b7b7;
+  width: 300px;
+  height: 3px;
+  position: relative;
+  cursor: pointer;
+}
+
+.container .right-side .duration-bar #song-duration-bar {
+  width: 0;
+  height: 3px;
+  position: absolute;
+  background: #fff;
+}
+
+.container .right-side .duration-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  width: 300px;
+  color: #b7b7b7;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.container .right-side .btn-container {
+  display: flex;
+  gap: 32px;
+  margin-bottom: 46px;
+}
+
+.container .right-side .btn-container #previous {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.container .right-side .btn-container #previous img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .right-side .btn-container #play-pause {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.container .right-side .btn-container #play-pause img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .right-side .btn-container #next {
+  padding: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+
+.container .right-side .btn-container #next img {
+  width: 100%;
+  height: 100%;
+}
+
+.container .right-side .volume-control {
+  position: absolute;
+  left: 25px;
+  top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.container .right-side .volume-control .volume-bar {
+  height: 150px;
+  width: 5px;
+  background-color: #b7b7b7;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container .right-side .volume-control .volume-bar #volume {
+  width: 5px;
+  height: 0;
+  position: absolute;
+  bottom: 0;
+  background: #fff;
+}
