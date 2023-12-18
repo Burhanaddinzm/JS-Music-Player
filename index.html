@@ -11,7 +11,10 @@
         <div class="left-side">
             <div class="top-side">
                 <div class="cover-img">
-                    <img src="./assets/images/album-placeholder.jpg" alt="album cover">
+                    <img src="./assets/images/summertime-sadness.jpeg" alt="album cover">
+                    <img src="./assets/images/fourth-of-july.jpeg" alt="album cover">
+                    <img src="./assets/images/glimpse-of-us.jpeg" alt="album cover">
+                    <img src="./assets/images/indigo-night.jpeg" alt="album cover">
                 </div>
                 <div class="info-container">
                     <div class="album-info">
@@ -21,11 +24,13 @@
                     </div>
                     <ul id="playlist-stats">
                         <li>
-                            <span id="year">0000</span>
+                            <span id="year">2022</span>
                         </li>
+                        ·
                         <li>
                             <span id="song-count">0 songs</span>
                         </li>
+                        ·
                         <li>
                             <span id="total-duration">00m 00s</span>
                         </li>
@@ -41,14 +46,8 @@
                     </div>
                     <span>Duration</span>
                 </div>
-                <ul id="playlist">
-                    <li>
-                        <div class="left-side">
-                            <span id="number">1</span>
-                            <span id="title">Title</span>
-                        </div>
-                        <span id="duration">0:00</span>
-                    </li>
+                <ul class="playlist">
+                    
                 </ul>
             </div>
         </div>
@@ -57,7 +56,7 @@
             <h3>Now Playing</h3>
 
             <div id="cover">
-                <img src="./assets/images/album-placeholder.jpg" alt="cover">
+                <img src="./assets/images/summertime-sadness.jpeg" alt="cover">
             </div>
 
             <p id="title">Summertime Saddness</p>
@@ -70,19 +69,21 @@
 
             <div class="duration-container">
                 <span id="current-time">0:00</span>
-                <span id="total-duration">1:36</span>
+                <span id="duration">1:36</span>
             </div>
 
+            <audio id="song" src="./assets/music/summertime-sadness.mp3"></audio>
+
             <div class="btn-container">
-                <div id="previous">
+                <button id="previous">
                     <img src="./assets/icons/previous.svg" alt="previous icon">
-                </div>
-                <div id="play-pause">
+                </button>
+                <button id="play-pause">
                     <img src="./assets/icons/play.svg" alt="play-pause icon">
-                </div>
-                <div id="next">
+                </button>
+                <button id="next">
                     <img src="./assets/icons/next.svg" alt="next icon">
-                </div>
+                </button>
             </div>
             
             <div class="volume-control">
@@ -91,6 +92,7 @@
                 </div>
                 <div class="volume-icon">
                     <img src="./assets/icons/volume.svg" alt="volume icon">
+                    <div class="bar hidden"></div>
                 </div>
             </div>
         </div>
