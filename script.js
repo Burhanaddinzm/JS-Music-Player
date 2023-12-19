@@ -250,6 +250,11 @@ volumeBar.addEventListener("click", (event) => {
   const clicked = event.offsetY;
   const totalHeight = volumeBar.clientHeight;
   song.volume = clicked / totalHeight;
+  if (song.volume == 0) {
+    volumeIconBar.classList.remove("hidden");
+  } else {
+    volumeIconBar.classList.add("hidden");
+  }
   updateVolume();
 });
 
