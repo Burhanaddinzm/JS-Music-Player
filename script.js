@@ -190,6 +190,7 @@ const displaySong = () => {
   artist.textContent = songs[index].artist;
   song.src = `./assets/music/${songs[index].name}.mp3`;
   duration.textContent = songs[index].duration;
+  document.title = `${songs[index].title} by ${songs[index].artist}`;
 };
 
 const playSong = () => {

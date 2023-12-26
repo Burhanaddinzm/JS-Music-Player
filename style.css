@@ -336,3 +336,34 @@ body {
   background: #000000;
   transform: translateY(-900%) rotateZ(-45deg);
 }
+
+@media screen and (max-width: 1024px) {
+  .container {
+    max-width: calc(100% - 32px);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr;
+    height: auto;
+  }
+
+  .container > .left-side {
+    padding: 32px;
+    min-width: 500px;
+  }
+
+  .container .right-side {
+    grid-row-start: 1;
+    padding: 24px 100px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container > .left-side {
+    padding: 16px; 
+  }
+
+  .container .right-side {
+    grid-row-start: 1;
+    padding: 16px;
+  }
+}
